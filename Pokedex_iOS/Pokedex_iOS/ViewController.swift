@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
+import Vision
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
+    // creat a label to hold the Pokemon name and confidence
+    var pokemonName: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
