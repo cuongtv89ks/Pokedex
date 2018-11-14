@@ -5,6 +5,7 @@ import coremltools
 import argparse
 import pickle
 
+
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-m", "--model", required=True,
